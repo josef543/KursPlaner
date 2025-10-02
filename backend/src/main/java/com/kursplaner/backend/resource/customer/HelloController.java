@@ -12,7 +12,8 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello() {
         Customer c = new Customer("John", "Doe");
-        customerService.saveCustomer(c);
+        var result = customerService.saveCustomer(c);
+        System.out.println(result);
 
         return "Hello from backend";
     }

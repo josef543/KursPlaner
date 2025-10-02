@@ -1,0 +1,11 @@
+@use '../_variables' as *;
+
+nav.navbar {
+  background-color: $primary;
+  color: $text;
+}
+
+ul {
+  list-style:none;
+  display: inline;
+}

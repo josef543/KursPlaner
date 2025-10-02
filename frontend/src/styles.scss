@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use './app/_variables' as *;
+
+html, body {
+  background-color: $bg;
+  color: $text;
+}
+
+:root {
+  /* Optional: expose SCSS variables as CSS vars if some 3rd-party styles rely on them */
+  --primary: #{$primary};
+  --text: #{$text};
+}
